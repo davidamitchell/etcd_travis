@@ -11,5 +11,5 @@ tar xzvf etcd-v2.2.1-linux-amd64.tar.gz
 cd etcd-v2.2.1-linux-amd64
 ./etcd &
 
-./etcdctl --no-sync set mykey "this is awesome"
-./etcdctl --no-sync get mykey
+# ./etcdctl --no-sync set mykey "this is awesome"
+# ./etcdctl --no-sync get mykey
