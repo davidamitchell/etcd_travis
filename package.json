@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+        "node-etcd": "4.1.0"
+    },
+    "scripts": {
+        "test": "node ./test.js"
+    }
+}
