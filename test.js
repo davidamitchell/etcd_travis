@@ -11,5 +11,5 @@ etcd.get("mykey", function(err, val){
 
   console.log(val.node.value);
 
-  assert.equal("value", val.node.value, 'expected to get "value" for key "mykey"', " something else");
+  assert.equal("value", val.node.value, 'expected to get "value" for key "mykey"');
 });
