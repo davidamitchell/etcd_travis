@@ -4,7 +4,10 @@ node_js:
   - "0.12"
 
 before_script:
-    - bash test.sh
+  - curl -L  https://github.com/coreos/etcd/releases/download/v2.2.1/etcd-v2.2.1-linux-amd64.tar.gz -o etcd-v2.2.1-linux-amd64.tar.gz
+  - tar xzvf etcd-v2.2.1-linux-amd64.tar.gz
+  - cd etcd-v2.2.1-linux-amd64
+  - ./etcd &
 
 before_install:
   - npm install -g npm@2.7.3
