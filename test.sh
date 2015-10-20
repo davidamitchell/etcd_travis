@@ -10,7 +10,7 @@ curl -L  https://github.com/coreos/etcd/releases/download/v2.2.1/etcd-v2.2.1-lin
 tar xzvf etcd-v2.2.1-linux-amd64.tar.gz
 cd etcd-v2.2.1-linux-amd64
 ls -la
-./etcd --no-sync &
+./etcd &
 
-./etcdctl set mykey "this is awesome"
-./etcdctl get mykey
+./etcdctl --no-sync set mykey "this is awesome"
+./etcdctl --no-sync get mykey
