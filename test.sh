@@ -1,15 +1,15 @@
 #!/bin/bash
+
+VERSION=v2.2.1
+FILE_ROOT="etcd-${VERSION}-linux-amd64"
+
 echo
-echo "__________.............--------TESTING STARTED--------.............__________"
+echo "Downloading ${VERSION} of etcd"
+
+curl -L  https://github.com/coreos/etcd/releases/download/${FILE_ROOT}.tar.gz -o ${FILE_ROOT}.tar.gz
+tar xzvf ${FILE_ROOT}.tar.gz
+cd ${FILE_ROOT}
+
 echo
-
-
-echo "attempting to install etcd"
-
-curl -L  https://github.com/coreos/etcd/releases/download/v2.2.1/etcd-v2.2.1-linux-amd64.tar.gz -o etcd-v2.2.1-linux-amd64.tar.gz
-tar xzvf etcd-v2.2.1-linux-amd64.tar.gz
-cd etcd-v2.2.1-linux-amd64
+echo "Starting etcd"
 ./etcd &
-
-# ./etcdctl --no-sync set mykey "this is awesome"
-# ./etcdctl --no-sync get mykey
