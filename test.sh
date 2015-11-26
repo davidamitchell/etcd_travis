@@ -8,23 +8,6 @@ curl -L  "https://github.com/coreos/etcd/releases/download/${VERSION}/${FILE_NAM
 tar xzvf "${FILE_NAME}"
 cd $FILE_ROOT
 
-echo
 echo "Starting etcd"
 ./etcd &
 sleep 1
-
-
-
-
-#
-#
-# FILE_ROOT="etcd-${VERSION}-linux-amd64"
-#
-# echo
-# echo "Downloading ${VERSION} of etcd"
-# echo "into ${FILE_ROOT}"
-#
-# curl -L  https://github.com/coreos/etcd/releases/download/$FILE_ROOT.tar.gz -o $FILE_ROOT.tar.gz
-# tar xzvf $FILE_ROOT.tar.gz
-# cd $FILE_ROOT
-#
