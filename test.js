@@ -8,6 +8,7 @@ etcd.set("mykey", "value");
 console.log("SET KEY");
 
 etcd.get("mykey", function(err, val){
+  console.log(err);
   console.log(val);
 
 
