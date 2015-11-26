@@ -5,7 +5,8 @@ Etcd = require('node-etcd');
 
 etcd = new Etcd('127.0.0.1', '4001');
 etcd.set("mykey", "value");
-console.log("SET KEY")
+console.log("SET KEY");
+
 etcd.get("mykey", function(err, val){
   console.log(val);
 
