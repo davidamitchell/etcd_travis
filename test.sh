@@ -3,9 +3,9 @@
 VERSION="v2.2.2"
 FILE_NAME="etcd-${VERSION}-linux-amd64.tar.gz"
 
-curl -L  "https://github.com/coreos/etcd/releases/download/${VERSION}/${FILE_NAME}" -o etcd-v2.2.2-linux-amd64.tar.gz
-tar xzvf etcd-v2.2.2-linux-amd64.tar.gz
-cd etcd-v2.2.2-linux-amd64
+curl -L  "https://github.com/coreos/etcd/releases/download/${VERSION}/${FILE_NAME}" -o etcd.tar.gz
+tar xzvf etcd.tar.gz
+cd etcd
 
 echo
 echo "Starting etcd"
