@@ -1,8 +1,9 @@
 #!/bin/bash
 
-VERSION=v2.2.1
+VERSION="v2.2.2"
+FILE_NAME="etcd-${VERSION}-linux-amd64.tar.gz"
 
-curl -L  https://github.com/coreos/etcd/releases/download/v2.2.2/etcd-v2.2.2-linux-amd64.tar.gz -o etcd-v2.2.2-linux-amd64.tar.gz
+curl -L  "https://github.com/coreos/etcd/releases/download/${VERSION}/${FILE_NAME}" -o etcd-v2.2.2-linux-amd64.tar.gz
 tar xzvf etcd-v2.2.2-linux-amd64.tar.gz
 cd etcd-v2.2.2-linux-amd64
 
